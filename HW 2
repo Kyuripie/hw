@@ -1,0 +1,110 @@
+#question 1 
+
+ n = 0 
+while (n < 10):
+    print(n)
+    n += 1
+    if n == 5:
+        break
+        n += 1
+ 
+ 
+ 
+ #question 2 
+ 
+ n = 0
+while (n<5):
+    print(n)
+    n = n + 1
+else: 
+    print(n, "is not less than 5")
+
+
+
+#question 3
+
+lovefruits = ["blueberry", "raspberry", "passionfruit", "dragonfruit", "mango", "apple"]
+print(type(lovefruits))
+print(lovefruits)
+
+for i in range(len(lovefruits)):
+    if (lovefruits[i]) == "apple":
+        print(lovefruits[i], "is really a fruit?")
+        break
+    print("I love", lovefruits[i], "!")
+    
+    
+#question 4
+
+n = 30
+sum = 0 
+i = 1
+
+while i <= n:
+    sum = sum + i
+    i = i+1
+    
+print(sum)
+
+
+#question 5
+
+grade = 95
+if grade > 90:
+    print ("A")
+elif grade > 80:
+    print ("B")
+elif grade >70:
+    print ("C")
+elif grade > 60:
+    print ("D")
+else:
+    print ("F")
+    
+  
+#question 6
+
+marks = {"Andy":88, "Amy":66, "James":90, "Jules":55, "Arthur":77}
+print(marks)
+
+key_list = list(marks)
+for i in range(len(marks)):
+    print(key_list[i], marks[key_list[i]])
+    
+#6.2
+for i in range(len(marks)):
+    print(key_list[i], marks[key_list[i]])
+    
+sum = 0 
+min = marks[key_list[0]]
+max = marks[key_list[0]]
+
+for i in range(len(marks)):
+    sum += marks[key_list[i]]
+    if min > marks[key_list[i]]:
+        min = marks[key_list[i]]
+    if max < marks[key_list[i]]:
+        max = marks[key_list[i]]
+        
+print (sum/len(marks), min, max)
+
+#alternatively
+
+grades = [88, 66, 90, 55, 77]
+sum = 0 
+for i in grades:
+    sum += i 
+    
+print(sum/len(grades), min(grades), max(grades))
+
+#6.3
+for i in marks:
+    if 'J' in i:
+        break
+    print(i)
+    
+#6.4
+for i in marks:
+    if 'J' in i:
+        continue
+    print(i)
